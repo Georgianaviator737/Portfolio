@@ -23,7 +23,7 @@ nav {
     align-items: center;
 }
 
-h1, li {
+nav h1, li {
     color: #03DAC6;
     cursor: pointer;
     display: inline-block;
@@ -31,13 +31,34 @@ h1, li {
     letter-spacing: 2px;
 }
 
-h1 {
+nav h1 {
     font-size: 40px;
     font-weight: 500;
     margin-left: 30px;
     padding: 10px 20px;
     border: 1px solid #03DAC6;
     border-radius: 5px;
+}
+
+.parent {
+    margin: 10px 10px;
+    
+    border-radius: 25px;
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 95px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #03DAC6;
+    border-right: 1px solid ;
+    animation: typing 4s steps(100, end) infinite, cursor .75s step-end infinite;
 }
 
 li {
@@ -54,3 +75,13 @@ li:hover {
     color: #1e1f26;
     border-radius: 15px;
 }
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+ }
+  
+ @keyframes cursor{
+   from, to {border-color: transparent}
+   50%{ border-color: #03DAC6}
+ }
